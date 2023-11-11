@@ -9,10 +9,8 @@ import {
   StackProps,
   Text,
   TextProps,
-  VStack,
   useToast,
 } from "@chakra-ui/react";
-import { AddIcon } from "@chakra-ui/icons";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../db/db.init";

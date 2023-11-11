@@ -7,7 +7,6 @@ import {
   Spinner,
   Stack,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import { ReactNode, useEffect, useState } from "react";
 import { useAuthContext } from "../context/auth-context";

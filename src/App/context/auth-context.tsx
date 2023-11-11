@@ -37,7 +37,10 @@ export const useAuthContext = () => useContext(AuthContext);
 const AuthContextProvider = ({ children }: { children: ReactNode }) => {
   const [currentUser, setCurrentUser] = useState<UserTypes>();
 
-  const value = useMemo(() => ({ currentUser, setCurrentUser }), [currentUser]);
+  const value: any = useMemo(
+    () => ({ currentUser, setCurrentUser }),
+    [currentUser]
+  );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
