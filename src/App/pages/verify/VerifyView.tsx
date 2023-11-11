@@ -41,7 +41,7 @@ const VerifyView = () => {
     if (ip_list.includes(ip)) {
       const ipRef = dynamic_authRef(ip);
       const p1 = getDoc(ipRef);
-      const p2 = fetcher("http://ip-api.com/json/" + ip);
+      const p2 = fetcher("https://ip-api.com/json/" + ip);
       const [snap, geo]: any = await Promise.all([p1, p2]);
 
       setCurrentUser({ ...snap.data(), ...geo });
